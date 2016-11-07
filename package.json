@@ -44,6 +44,7 @@
     "ember-load-initializers": "^0.5.1",
     "ember-local-storage": "1.1.0",
     "ember-resolver": "^2.0.3",
+    "ember-truth-helpers": "1.2.0",
     "grunt": "^1.0.1",
     "grunt-concurrent": "^2.3.1",
     "grunt-contrib-jshint": "^1.0.0",
