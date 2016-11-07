@@ -6,7 +6,6 @@ export default Ember.Component.extend({
   actions: {
     selectValue () {
       this.set('item.category', Ember.$('select').val());
-      console.log("this is item.category:", this.get('item.category'));
     },
     submit () {
       this.sendAction('submit', this.get('item'));
