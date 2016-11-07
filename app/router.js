@@ -12,6 +12,7 @@ Router.map(function () {
   this.route('users');
   this.route('categories');
   this.route('category', { path: 'categories/:category' });
+  this.route('post-item');
 });
 
 export default Router;

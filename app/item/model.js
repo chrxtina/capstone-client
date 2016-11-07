@@ -5,5 +5,5 @@ export default DS.Model.extend({
   location: DS.attr('string'),
   body: DS.attr('string'),
   address: DS.attr('string'),
-  category: DS.belongsTo('category'),
+  category: DS.attr('string')
 });
