@@ -1,0 +1,9 @@
+<h3 class="category-header">
+  {{category.name}}
+</h3>
+
+<ul>
+  {{#each category.items as |item|}}
+    <li>{{item.title}}</li>
+  {{/each}}
+</ul>
