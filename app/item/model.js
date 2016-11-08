@@ -6,5 +6,6 @@ export default DS.Model.extend({
   body: DS.attr('string'),
   address: DS.attr('string'),
   category: DS.belongsTo('category'),
-  user: DS.belongsTo('user')
+  user: DS.belongsTo('user'),
+  editable: DS.attr('boolean')
 });

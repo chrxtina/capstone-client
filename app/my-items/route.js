@@ -2,6 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model () {
-    return this.get('store').findAll('my-items');
+    return this.get('store').findAll('category');
+    // return this.get('store').findAll('my-items');
   }
 });

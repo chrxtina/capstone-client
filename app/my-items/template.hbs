@@ -1,4 +1,9 @@
 <h2>My Items</h2>
-{{#each model as |item|}}
-  {{item}}
+
+{{#each model as |category|}}
+  {{#each category.items as |item|}}
+    {{#if item.editable}}
+    <li>{{item.title}}, User={{item.user.id}}</li>
+    {{/if}}
+  {{/each}}
 {{/each}}
