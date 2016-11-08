@@ -49,7 +49,7 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
-    ENV.baseURL = '/';
+    ENV.rootURL = '/capstone-client';
     ENV.locationType = 'hash';
     ENV.apiHost = 'https://serene-ocean-31721.herokuapp.com';
   }
