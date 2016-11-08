@@ -4,6 +4,8 @@
 
 <ul>
   {{#each category.items as |item|}}
-    <li>{{item.title}}</li>
+    {{#link-to 'item' item.id}}
+      <li>{{item.title}}</li>
+    {{/link-to}}
   {{/each}}
 </ul>
