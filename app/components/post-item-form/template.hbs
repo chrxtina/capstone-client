@@ -1,22 +1,12 @@
 <div class="form-group">
 
   <div class="form-group">
-    <label for="category">Category:</label>
-    <select required class="form-control" name="category" {{action 'selectValue' on='change'}}>
+    <label for="category_id">Category:</label>
+    <select required class="form-control" name="category_id" {{action 'selectValue' on='change'}}>
       <option disabled selected> -- Select Category -- </option>
-      <option value="bikes">Bikes</option>
-      <option value="books">Books</option>
-      <option value="clothes">Clothes</option>
-      <option value="electronics">Electronics</option>
-      <option value="food/drink">Food/Drink</option>
-      <option value="furniture">Furniture</option>
-      <option value="games">Games</option>
-      <option value="garden">Garden</option>
-      <option value="household">Household</option>
-      <option value="office">Office</option>
-      <option value="sport">Sport</option>
-      <option value="tools">Tools</option>
-      <option value="misc">Misc.</option>
+      {{#each categories as |category|}}
+        <option value={{category.id}}>{{category.name}}</option>
+      {{/each}}
     </select>
   </div>
 
