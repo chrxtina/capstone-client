@@ -49,7 +49,9 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
+    ENV.baseURL = '/';
     ENV.locationType = 'hash';
+    ENV.apiHost = 'https://serene-ocean-31721.herokuapp.com';
   }
 
   return ENV;
