@@ -3,7 +3,11 @@
 {{#each model as |category|}}
   {{#each category.items as |item|}}
     {{#if item.editable}}
-    <li>{{item.title}}, User={{item.user.id}}</li>
+    <li>
+      ID:{{item.id}} {{item.title}} | Category:{{item.category.name}}
+      <button class="btn btn-xs btn-primary" {{action 'edit' item.id}}>Edit</button>
+      <button class="btn btn-xs btn-danger">Delete</button>
+    </li>
     {{/if}}
   {{/each}}
 {{/each}}
