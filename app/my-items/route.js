@@ -7,6 +7,12 @@ export default Ember.Route.extend({
   actions: {
     edit (item) {
       this.transitionTo('item/edit', item);
+    },
+    delete (item) {
+      return this.get('store').findRecord('item', item, {backgroundReload: false })
+      .then(function(item) {
+        item.destroyRecord();
+      });
     }
   }
 });

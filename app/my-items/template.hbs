@@ -6,7 +6,7 @@
     <li>
       ID:{{item.id}} {{item.title}} | Category:{{item.category.name}}
       <button class="btn btn-xs btn-primary" {{action 'edit' item.id}}>Edit</button>
-      <button class="btn btn-xs btn-danger">Delete</button>
+      <button class="btn btn-xs btn-danger" {{action 'delete' item.id}}>Delete</button>
     </li>
     {{/if}}
   {{/each}}
