@@ -141,11 +141,13 @@ textarea { resize: vertical; }
     .delete-button {
       background-color: $redish;
       color: $white;
+      margin-top: 2px;
     }
 
     .edit-button {
       background-color: $greenish;
       color: $white;
+      margin-top: 2px;
     }
 
     button:hover {
