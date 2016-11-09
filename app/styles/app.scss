@@ -3,9 +3,9 @@
 
 textarea { resize: vertical; }
 
-.sidebar-wrapper {
-
-}
+// .sidebar-wrapper {
+//
+// }
 
 .sidebar-nav {
   list-style: none;
@@ -40,11 +40,11 @@ textarea { resize: vertical; }
   margin: 20px;
 
   li {
+    border-bottom: 1px solid gray;
     list-style: none;
     // width: 275px;
     margin: 10px;
     padding: 10px;
-    border-bottom: 1px solid gray;
   }
 
   .my-items-buttons {
@@ -54,12 +54,13 @@ textarea { resize: vertical; }
 }
 
 .category-items-list {
-  margin: 15px;
   font-size: 16px;
+  margin: 15px;
+
   li {
     list-style: none;
-    padding: 5px 0;
     margin: 10px;
+    padding: 5px 0;
   }
 }
 
