@@ -1,8 +1,11 @@
 <h2>Edit Item</h2>
-
-Item ID: {{model.item.id}}
-
-{{edit-item-form submit="save"
-                 back="back"
-                 categories=model.categories
-                 item=model.item}}
+<div class="meta-line"></div>
+<div class="edit-item-form">
+  ID: {{model.item.id}}
+<br>
+<br>
+  {{edit-item-form submit="save"
+                   back="back"
+                   categories=model.categories
+                   item=model.item}}
+</div>

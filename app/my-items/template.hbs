@@ -8,8 +8,8 @@
       <li>
         id: {{item.id}} - {{item.title}} ({{item.category.name}})
         <div class="my-items-buttons">
-          <button class="btn btn-xs btn-primary" {{action 'edit' item.id}}>Edit</button>
-          <button class="btn btn-xs btn-danger" {{action 'delete' item.id}}>Delete</button>
+          <button class="btn btn-xs edit-button" {{action 'edit' item.id}}>Edit</button>
+          <button class="btn btn-xs delete-button" {{action 'delete' item.id}}>Delete</button>
         </div>
       </li>
       {{/if}}
