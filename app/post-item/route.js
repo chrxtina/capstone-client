@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  flashMessages: Ember.inject.service(),
   model () {
     return this.get('store').findAll('category');
   },
@@ -15,6 +16,14 @@ export default Ember.Route.extend({
       category.get('items').pushObject(item);
       item.save().then(function () {
         category.save();
+      })
+      .then(() => this.transitionTo('/'))
+      .then(() => {
+        this.get('flashMessages').success('Item successfully created.');
+      })
+      .catch(() => {
+        this.get('flashMessages')
+        .danger('There was a problem. Please try again.');
       });
     },
   },
