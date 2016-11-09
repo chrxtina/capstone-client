@@ -21,22 +21,33 @@
   </div>
 </nav>
 
-<h1>Welcome to Cup O' Sugar!</h1>
-{{#if isAuthenticated}}
-  <!-- Future sidebar nav -->
-  <ul>
-    <li>{{#link-to "categories"}}Categories{{/link-to}}</li>
-    <li>{{#link-to "post-item"}}Post Item{{/link-to}}</li>
-    <li>{{#link-to "my-items"}}My Items{{/link-to}}</li>
-    <!-- <li>{{#link-to "messages"}}Messages{{/link-to}}</li> -->
-  </ul>
-{{/if}}
+<div>
+  {{#if isAuthenticated}}
+    <!-- Sidebar -->
+    <div class="col-md-3">
+        <ul class="sidebar-nav">
+            <li>
+              {{#link-to "categories"}}Categories{{/link-to}}
+            </li>
+            <li>
+              {{#link-to "post-item"}}Post Item{{/link-to}}
+            </li>
+            <li>
+              {{#link-to "my-items"}}My Items{{/link-to}}
+            </li>
+        </ul>
+    </div>
+    <!-- /#sidebar-wrapper -->
+  {{/if}}
 
 
-{{#each flashMessages.queue as |flash|}}
-  {{flash-message flash=flash}}
-{{/each}}
+  {{#each flashMessages.queue as |flash|}}
+    {{flash-message flash=flash}}
+  {{/each}}
 
-<div class="col-md-8 col-md-offset-2">
-  {{outlet}}
+  <div class="col-md-8">
+    <div class="content">
+    {{outlet}}
+    </div>
+  </div>
 </div>

@@ -2,3 +2,67 @@
 @import 'bootstrap/theme';
 
 textarea { resize: vertical; }
+
+.sidebar-wrapper {
+
+}
+
+.sidebar-nav {
+  list-style: none;
+  margin-top: 75px;
+  padding-left: 50px;
+  top: 0;
+
+  li {
+    border: 1px solid gray;
+    border-radius: 5px;
+    line-height: 40px;
+    list-style-position: inside;
+    margin: 7px;
+    text-align: center;
+    width: 150px;
+  }
+}
+
+.content {
+  margin: 50px 30px 70px;
+}
+
+.sign-forms {
+  margin-left: 70px;
+}
+
+.category-list {
+  margin: 20px 0 0 50px;
+}
+
+.my-items-list {
+  margin: 20px;
+
+  li {
+    list-style: none;
+    // width: 275px;
+    margin: 10px;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+  }
+
+  .my-items-buttons {
+    margin: 10px 0 0 30px;
+    text-align: right;
+  }
+}
+
+.category-items-list {
+  margin: 15px;
+  font-size: 16px;
+  li {
+    list-style: none;
+    padding: 5px 0;
+    margin: 10px;
+  }
+}
+
+.single-item {
+  margin: 20px 0 0 50px;
+}

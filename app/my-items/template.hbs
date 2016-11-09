@@ -1,13 +1,17 @@
 <h2>My Items</h2>
 
-{{#each model as |category|}}
-  {{#each category.items as |item|}}
-    {{#if item.editable}}
-    <li>
-      ID:{{item.id}} {{item.title}} | Category:{{item.category.name}}
-      <button class="btn btn-xs btn-primary" {{action 'edit' item.id}}>Edit</button>
-      <button class="btn btn-xs btn-danger" {{action 'delete' item.id}}>Delete</button>
-    </li>
-    {{/if}}
+<div class="my-items-list">
+  {{#each model as |category|}}
+    {{#each category.items as |item|}}
+      {{#if item.editable}}
+      <li>
+        id: {{item.id}} - {{item.title}} ({{item.category.name}})
+        <div class="my-items-buttons">
+          <button class="btn btn-xs btn-primary" {{action 'edit' item.id}}>Edit</button>
+          <button class="btn btn-xs btn-danger" {{action 'delete' item.id}}>Delete</button>
+        </div>
+      </li>
+      {{/if}}
+    {{/each}}
   {{/each}}
-{{/each}}
+</div>

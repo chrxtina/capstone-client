@@ -1,7 +1,11 @@
-<h2>{{model.title}} - </h2> <h4>{{model.location}}</h4>
+<h2>{{model.title}}  </h2>
 
 
-<p>Description: {{model.body}}</p>
-<p>Near: {{model.address}}</p>
+<div class="single-item">
+  <h4>{{model.location}}</h4>
 
-<p>Contact: {{model.user.email}}</p>
+  <p>Description: {{model.body}}</p>
+  <p>Near: {{model.address}}</p>
+
+  <p>Contact: {{model.user.email}}</p>
+</div>
