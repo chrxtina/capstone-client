@@ -1,8 +1,7 @@
-<div class="form-group">
-
+<form {{action "submit" on="submit"}}>
   <div class="form-group">
     <label for="category_id">Category:</label>
-    <select required class="form-control" name="category_id" {{action 'selectValue' on='change'}}>
+    <select class="form-control" name="category_id" required {{action 'selectValue' on='change'}}>
       <option disabled selected> -- Select Category -- </option>
       {{#each categories as |category|}}
         <option value={{category.id}}>{{category.name}}</option>
@@ -10,48 +9,50 @@
     </select>
   </div>
 
-  <label for="title">Title:</label>
-  {{input
-          class="form-control"
-          id="title"
-          placeholder="Title"
-          value=item.title
-          required="required"}}
-</div>
+  <div class="form-group">
+    <label for="title">Title:</label>
+    {{input
+            class="form-control"
+            id="title"
+            placeholder="Title"
+            value=item.title
+            required="required"}}
+  </div>
 
-<div class="form-group">
-  <label for="location">Location:</label>
-  {{input
-          class="form-control"
-          id="location"
-          placeholder="e.g. Kendall Square"
-          value=item.location
-          required="required"}}
-</div>
+  <div class="form-group">
+    <label for="location">Location:</label>
+    {{input
+            class="form-control"
+            id="location"
+            placeholder="e.g. Kendall Square"
+            value=item.location
+            required="required"}}
+  </div>
 
-<div class="form-group">
-  <label for="body">Body:</label>
-  {{textarea
-          class="form-control"
-          id="body"
-          placeholder="Description"
-          value=item.body
-          required="required"}}
-</div>
+  <div class="form-group">
+    <label for="body">Body:</label>
+    {{textarea
+            class="form-control"
+            id="body"
+            placeholder="Description"
+            value=item.body
+            required="required"}}
+  </div>
 
-<div class="form-group">
-  <label for="address">Address/Cross Streets:</label>
-  {{input
-          class="form-control"
-          id="address"
-          placeholder="Address/Cross Streets"
-          value=item.address}}
-</div>
+  <div class="form-group">
+    <label for="address">Address/Cross Streets:</label>
+    {{input
+            class="form-control"
+            id="address"
+            placeholder="Address/Cross Streets"
+            value=item.address}}
+  </div>
 
-<button type="submit" class="btn edit-item-button" {{action "submit"}}>
-  Save
-</button>
+  <button type="submit" class="btn edit-item-button">
+    Save
+  </button>
 
-<button class="btn cancel-button" {{action "back"}}>
-  Cancel
-</button>
+  <button class="btn cancel-button" {{action "back"}}>
+    Cancel
+  </button>
+</form>
