@@ -17,8 +17,8 @@ Cup O' Sugar is a 'shareconomy' application that allows users post items online 
 
 ## Technologies Used
 
- Front-end: HTML/SCSS/Sass, Javascript, Bootstrap, AJAX, Ember.js
- Back-end: Ruby on Rails
+* Front-end: HTML/SCSS/Sass, Javascript, Bootstrap, AJAX, Ember.js
+* Back-end: Ruby on Rails
 
 ## Development Process
 
