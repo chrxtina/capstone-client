@@ -6,7 +6,7 @@ Back-end repository: https://github.com/chrxtina/capstone-api
 
 ## About
 
-Cup O' Sugar is a 'shareconomy' application that allows users post items online and share them with their neighbors. The app is meant to foster community, provide a resources for those in need and possibly prevent unnecessary consumerism.
+Cup O' Sugar is a 'shareconomy' application that allows users post items online and share them with their neighbors. The app is meant to foster community, provide a resource for those in need and possibly prevent unnecessary consumerism.
 ![Cup O' Sugar screenshot](/app/images/CupoSugar.jpg)
 
 ## Features
