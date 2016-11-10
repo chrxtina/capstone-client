@@ -1,15 +1,5 @@
 <form {{action "submit" on="submit"}}>
   <div class="form-group">
-    <label for="category_id">Category:</label>
-    <select class="form-control" name="category_id" required {{action 'selectValue' on='change'}}>
-      <option disabled selected> -- Select Category -- </option>
-      {{#each categories as |category|}}
-        <option value={{category.id}}>{{category.name}}</option>
-      {{/each}}
-    </select>
-  </div>
-
-  <div class="form-group">
     <label for="title">Title:</label>
     {{input
             class="form-control"
