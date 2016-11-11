@@ -8,6 +8,10 @@ export default Ember.Component.extend({
     },
     submit () {
       this.sendAction('submit', this.get('item'));
+      this.set('item.title', null);
+      this.set('item.location', null);
+      this.set('item.body', null);
+      this.set('item.address', null);
     },
     reset () {
       this.set('item', {});
