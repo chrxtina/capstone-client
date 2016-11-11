@@ -13,9 +13,9 @@ export default Ember.Route.extend({
       .then(function(item) {
         item.destroyRecord();
       })
-      .then(() => {
-        this.get('flashMessages').success('Item deleted.');
-      })
+      // .then(() => {
+      //   this.get('flashMessages').success('Item deleted.');
+      // })
       .catch(() => {
         this.get('flashMessages')
         .danger('There was a problem. Please try again.');

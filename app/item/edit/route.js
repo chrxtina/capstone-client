@@ -13,9 +13,9 @@ export default Ember.Route.extend({
     save (item) {
       item.save()
       .then(() => this.transitionTo('my-items'))
-      .then(() => {
-        this.get('flashMessages').success('Item successfully updated.');
-      })
+      // .then(() => {
+      //   this.get('flashMessages').success('Item successfully updated.');
+      // })
       .catch(() => {
         this.get('flashMessages')
         .danger('There was a problem. Please try again.');
