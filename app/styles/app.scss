@@ -8,10 +8,12 @@ $black: #000;
 $brown: #4a3636;
 $light-brown: #a39592;
 $lighter-brown: #d9cecc;
-$yellow: #ffd47f;
+$olive: #b0afa5;
 $redish: #9c414e;
 $greenish: #6e9985;
 $blueish: #62a0bb;
+$owner-message: #6f737a;
+$other-message: #806d75;
 $background: #ece6e5;
 $nav-btns: #5a6a76;
 
@@ -79,7 +81,7 @@ textarea { resize: vertical; }
     }
 
     a:hover {
-      color: $yellow;
+      color: $olive;
     }
   }
 }
@@ -92,7 +94,8 @@ textarea { resize: vertical; }
   margin-left: 70px;
 }
 
-.category-list {
+.category-list,
+.conversations-list {
   margin: 20px 0 0 50px;
 
   h4 {
@@ -113,7 +116,8 @@ textarea { resize: vertical; }
 }
 
 .post-item-button,
-.edit-item-button {
+.edit-item-button,
+.post-message-button {
   background-color: $blueish;
   color: $white;
 }
@@ -177,5 +181,27 @@ textarea { resize: vertical; }
   .location {
     font-size: 20px;
     font-weight: bold;
+  }
+}
+
+.conversation-messages-list {
+  ul {
+    background-color: $white;
+    border-radius: 5px;
+    padding: 10px;
+
+    li {
+      list-style: none;
+      margin: 5px;
+    }
+  }
+
+  .owner-message {
+    color: $owner-message;
+    text-align: right;
+  }
+
+  .other-message {
+    color: $other-message;
   }
 }

@@ -6,7 +6,27 @@
 <div class="conversation-messages-list">
   <ul>
     {{#each conversation.messages as |message|}}
-        <li>{{message.body}}</li>
+      {{#if message.editable}}
+        <li class="owner-message">{{message.body}}</li>
+      {{else}}
+        <li class="other-message">{{message.body}}</li>
+      {{/if}}
     {{/each}}
   </ul>
 </div>
+
+<form {{action "submit" on="submit"}}>
+  <input type="hidden" id="convo_id" value={{conversation.id}}/>
+  <div class="form-group">
+    {{textarea
+            class="form-control"
+            id="message-body"
+            value=message.body
+            required="required"
+            placeholder="Write a reply..."}}
+  </div>
+
+  <button type="submit" class="btn post-message-button">
+    Send
+  </button>
+</form>
