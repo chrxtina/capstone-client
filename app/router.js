@@ -16,7 +16,10 @@ Router.map(function () {
   this.route('my-items');
   this.route('item', {path: 'items/:item_id'});
   this.route('item/edit', {path: 'items/:item_id/edit'});
-  
+
+  this.route('conversations');
+  this.route('conversation', { path: 'conversations/:conversation_id' });
+  this.route('message', {path: 'messages/:message_id'});
 });
 
 export default Router;

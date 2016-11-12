@@ -1,0 +1,12 @@
+<h2>
+  {{conversation.name}}
+</h2>
+<div class="meta-line"></div>
+
+<div class="conversation-messages-list">
+  <ul>
+    {{#each conversation.messages as |message|}}
+        <li>{{message.body}}</li>
+    {{/each}}
+  </ul>
+</div>
