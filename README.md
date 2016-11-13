@@ -6,18 +6,19 @@ Back-end repository: https://github.com/chrxtina/capstone-api
 
 ## About
 
-Cup O' Sugar is a 'shareconomy' application that allows users post items online and share them with their neighbors. The app is meant to foster community, provide a resource for those in need and possibly prevent unnecessary consumerism.
+Cup O' Sugar is a 'shareconomy' application that allows users to post items online and share them with their neighbors. The app is meant to foster community, provide a resource for those in need and possibly prevent unnecessary consumerism.
 ![Cup O' Sugar screenshot](/app/images/CupoSugar.jpg)
 
 ## Features
 
 * User Authentication: sign-up, sign-in, sign-out, and change password
-* Create and view all or own items.
+* Create and view all or own items
 * Edit and delete own items.
+* Simple messaging system allowing users to contact item owners
 
 ## Technologies Used
 
-* Front-end: HTML/SCSS/Sass, Javascript, Bootstrap, AJAX, Ember.js
+* Front-end: Ember.js, Bootstrap
 * Back-end: Ruby on Rails
 
 ## Development Process
@@ -42,7 +43,15 @@ the layout and the styling of the app before deploying.
 ## Unsolved Problems and Next Steps
 
 * Add google maps API to show item location
-* Protect identity of users for item contact (via simple message or mail relay system)
+
+## Dependencies
+
+Install build dependencies with `npm install`. Install runtime dependencies with
+`bower install`.
+
+-   [ember.js](http://emberjs.com/)
+-   [ember-cli](http://www.ember-cli.com/)
+-   [Bootstrap](http://getbootstrap.com)
 
 ## Wireframes
 
