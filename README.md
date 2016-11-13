@@ -39,10 +39,11 @@ one view state at a time and depending on the purpose, would develop components
 for data and actions belonging to each route. Lastly, I worked on organizing
 the layout and the styling of the app before deploying.
 
-
 ## Unsolved Problems and Next Steps
 
 * Add google maps API to show item location
+* Add unread/read visual difference between messages
+* Add search functionality for category items
 
 ## Dependencies
 
@@ -53,10 +54,14 @@ Install build dependencies with `npm install`. Install runtime dependencies with
 -   [ember-cli](http://www.ember-cli.com/)
 -   [Bootstrap](http://getbootstrap.com)
 
-## Wireframes
+## Planning
 
-https://drive.google.com/file/d/0B9I6LEzstvUqRlN3eHlrdHhmWUtSVExEQ3FMckpPaUZKRVZz/view?usp=sharing
+[Wireframes](https://drive.google.com/file/d/0B9I6LEzstvUqRlN3eHlrdHhmWUtSVExEQ3FMckpPaUZKRVZz/view?usp=sharing)
 
-## User Stories and Entity Relationship Diagram
+[Entity Relationship Diagram](https://docs.google.com/drawings/d/1GDq22b-j0gjaDgGtHtdWZpjNpgdO7GIeCxyDb_tnpUk/edit?usp=sharing)
 
-https://drive.google.com/file/d/0B9I6LEzstvUqXy1oV3h2RHhrX0VTZnhvdjN0SGRYTzRLbXZJ/view?usp=sharing
+### User Stories
+- As a user, I want to see a list of categories, which each link to lists of items in that category.
+- As a user, I want a form to create and post an item.
+- As a user, I want a list of my items, which I can update and delete.
+- As a user, I want to view my messages and have a option to reply to them.
