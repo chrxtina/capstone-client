@@ -117,7 +117,9 @@ textarea { resize: vertical; }
 
 .post-item-button,
 .edit-item-button,
-.post-message-button {
+.post-message-button,
+.sign-in-button,
+.sign-up-button {
   background-color: $blueish;
   color: $white;
 }
