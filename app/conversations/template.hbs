@@ -3,8 +3,6 @@
 
 <div class="conversations-list">
   {{#each model as |conversation|}}
-    {{#link-to 'conversation' conversation}}
-      {{cupo-conversation/card name=conversation.name}}
-    {{/link-to}}
+    {{cupo-conversation/card conversation=conversation}}
   {{/each}}
 </div>

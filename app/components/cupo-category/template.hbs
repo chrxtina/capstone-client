@@ -6,9 +6,11 @@
 <div class="category-items-list">
   <ul>
     {{#each category.items as |item|}}
-      {{#link-to 'item' item.id}}
-        <li>{{item.title}} - {{item.location}}</li>
-      {{/link-to}}
+      <li>
+        {{#link-to 'item' item.id}}
+          {{item.title}} - {{item.location}}
+        {{/link-to}}
+      </li>
     {{/each}}
   </ul>
 </div>

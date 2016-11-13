@@ -1,1 +1,5 @@
-<h4 class="list-header">{{name}}</h4>
+<h4 class="list-header">
+  {{#link-to 'category' category}}
+    {{category.name}}
+  {{/link-to}}
+</h4>

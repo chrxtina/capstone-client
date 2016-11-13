@@ -3,8 +3,6 @@
 
 <div class="category-list">
   {{#each model as |category|}}
-    {{#link-to 'category' category}}
-      {{cupo-category/card name=category.name}}
-    {{/link-to}}
+      {{cupo-category/card category=category}}
   {{/each}}
 </div>
