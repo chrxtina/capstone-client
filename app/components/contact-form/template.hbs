@@ -1,0 +1,7 @@
+
+<form {{action "submit" on="submit"}}>
+  <input type="hidden" id="convo_name" value="User {{item.user.id}}, User {{userId}} - {{item.title}}"/>
+  <input type="hidden" id="owner_id" value={{item.user.id}}/>
+  <input type="hidden" id="user_id" value={{userId}}/>
+  <button type="submit" class="btn btn-xs">Create Message</button>
+</form>
