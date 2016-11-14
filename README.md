@@ -13,7 +13,7 @@ Cup O' Sugar is a 'shareconomy' application that allows users to post items onli
 
 * User Authentication: sign-up, sign-in, sign-out, and change password
 * Create and view all or own items
-* Edit and delete own items.
+* Edit and delete own items
 * Simple messaging system allowing users to contact item owners
 
 ## Technologies Used
