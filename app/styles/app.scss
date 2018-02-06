@@ -52,6 +52,9 @@ h2 {
 .navbar-brand {
   font-family: 'Playfair Display', serif;
   font-size: 30px;
+  white-space: nowrap;
+  line-height: 50px;
+  padding: 0;
 }
 
 textarea { resize: vertical; }
@@ -210,9 +213,6 @@ textarea { resize: vertical; }
 
 .website-logo {
   float: left;
-  height: auto;
-  max-height: 37px;
-  margin-top: -10px;
-  margin-right: 7px;
-
+  max-width: 40px;
+  margin: .5rem 1rem .7rem;
 }
